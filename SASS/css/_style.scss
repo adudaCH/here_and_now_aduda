@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+width: 100vw;
+height:100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.innerContainer{
+    width: 80%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    & h1{
+        font: normal normal normal 10em/231px Satisfy;
+            color: #FFFFFF;
+            text-shadow: 0px 0px 36px #00000087;
+    }
+    &  h2{
+font: normal normal normal 32px/38px Varela Round;
+    color: #FFFFFF;
+    }
+& p{
+    font: normal normal normal 16px/20px Varela Round;
+        color: #F9F9F9;
+        margin-top: 20px;
+} 
+}
+.formBox{
+    width: 70%;
+    form{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 20px;
+        & .formInput{
+            width: 35%;
+            flex-direction: row;
+            // border: wheat solid 2pt;
+        }
+        .fullname{
+            margin-top: 20px;
+            margin-right: 100px;
+        }
+        label{
+            display: block;
+            font: normal normal normal 16px/20px Varela Round;
+                letter-spacing: 0px;
+                color: #F9F9F9;
+        }
+        input{
+            width: 70%;
+            height: 30px;
+            background: #F6F6F624 0% 0% no-repeat padding-box;
+            border: 2px solid #FFFFFF;
+            margin-bottom: 20px;
+                
+        }
+        & button{
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            width: 20%;
+            height: 30px;
+            margin-top: 20px;
+            border: none;
+            margin-right: 10px;
+        }
+        & button:hover{
+            background: #dbe3f6 0% 0% no-repeat padding-box;
+        }
+    }
+}
+
+
+@media (max-width: 400px){
+    .innerContainer {
+        width: 100%;
+        & h1{
+            font: normal normal normal 3.75em/86px Satisfy;
+            padding-bottom: 30px;
+        }
+        .piska{
+            padding-bottom: 30px;
+        }
+    }
+    .formBox{
+        width: 100%;
+        padding-bottom: 10px;
+        & form{
+            .formInput {
+                    width: 80%;
+                    margin: 0 auto;
+
+                    input{
+                        width: 100%;
+                    }
+                }
+            flex-direction: column;
+            width: 100%;
+            .sendbtn{
+            margin: 0 auto;
+            width: 100%;
+            }
+        }
+    }
+    }
